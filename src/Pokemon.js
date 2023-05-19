@@ -1,6 +1,7 @@
 import React from "react";
-// import PokeInfo from './data.json'
-import { Button, Card } from "react-bootstrap";
+// import PokeInfo from './data.json';
+import './pokemon.css';
+import {Card, Button} from 'react-bootstrap';
 
 class Pokemon extends React.Component{
   constructor(props){
@@ -17,20 +18,26 @@ class Pokemon extends React.Component{
    randomNumber = (min, max) => {
      min = 1;
      max = 151;
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+     let pokeNum = Math.floor(Math.random() * (max - min + 1)) + min;
+     this.setState({name:pokeNum})
+     return pokeNum;
   }
 
   handleClick = (e) => {
     e.preventDefault();
-    this.setState({image:`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${this.randomNumber()}.png`})
+    this.setState({
+      image:`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${this.randomNumber()}.png`})
+    
   }
 
   render(){
     return(
-      <>
-      <img alt="pokemon" src={this.state.image} />
-      <Button onClick={this.handleClick}> Give me different Pokemon</Button>
-      </>
+      
+      <Card style={{ width: 'fit-content' }}>
+        <Card.Title>{this.state.name}</Card.Title>
+      <img className="pokemon_img" alt="pokemon" src={this.state.image} />
+      <Button variant="primary" type="submit" onClick={this.handleClick}> Give me different Pokemon</Button>
+      </Card>
     )
   }
 

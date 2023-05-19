@@ -8,6 +8,8 @@ class Main extends React.Component{
       
     <>
     <PokemonCults/>
+    <PokemonCults/>
+    <PokemonCults/>
     </>
     )
   }

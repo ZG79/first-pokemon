@@ -5,9 +5,9 @@ class Footer extends React.Component{
   render(){
     return(
       
-    <>
+    <div>
       Zeegii Ulzii
-    </>
+    </div>
     )
   }
 }
