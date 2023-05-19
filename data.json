@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Pikachu",
+    "skill": "Thunder",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Pikachu_%28SM028%29.png/1200px-Pikachu_%28SM028%29.png"
+  },
+  {
+    "name": "Eevee",
+    "skill": "Quick Attack",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Eevee_%28Official_Artwork%29.png/1200px-Eevee_%28Official_Artwork%29.png"
+  },
+  {
+    "name": "Charmander",
+    "skill": "Scratch",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Charmander_%28FRLG%29.png/1200px-Charmander_%28FRLG%29.png"
+  },
+  {
+    "name": "Squirtle",
+    "skill": "Water Gun",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Squirtle_%28FRLG%29.png/1200px-Squirtle_%28FRLG%29.png"
+  },
+  {
+    "name": "Bulbasaur",
+    "skill": "Tackle",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Bulbasaur_%28FRLG%29.png/1200px-Bulbasaur_%28FRLG%29.png"
+  }
+]
